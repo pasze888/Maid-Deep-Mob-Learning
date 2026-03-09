@@ -192,5 +192,21 @@ allprojects {
         mavenCentral()
     }
 }
+repositories {
+    // 添加 CurseForge Maven 仓库
+    maven {
+        url "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+}
 
+dependencies {
+    // CurseForge Maven 支持同时下载模组与源码，方便开发调试
+    implementation 'curse.maven:touhou-little-maid-355044:7510722-sources-7510726'
+
+    // hostile-neural-networks
+    implementation 'curse.maven:hostile-neural-networks-552574:6430289-sources-6430290'
+}
 
