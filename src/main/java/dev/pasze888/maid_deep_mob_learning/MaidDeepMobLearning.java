@@ -8,6 +8,6 @@ public class MaidDeepMobLearning {
     public static final String MODID = "maid_deep_mob_learning";
 
     public MaidDeepMobLearning() {
-        NeoForge.EVENT_BUS.register(new );
+        NeoForge.EVENT_BUS.register(new MaidKillHandler());
     }
 }
