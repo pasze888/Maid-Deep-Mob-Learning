@@ -1,8 +1,9 @@
-package dev.pasze888.maid_deep_mob_learning.Compat;
+package dev.pasze888.maid_deep_mob_learning.compat;
 
 import com.github.tartaricacid.touhoulittlemaid.api.ILittleMaid;
 import com.github.tartaricacid.touhoulittlemaid.api.LittleMaidExtension;
 import com.github.tartaricacid.touhoulittlemaid.client.overlay.MaidTipsOverlay;
+import dev.shadowsoffire.hostilenetworks.Hostile;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -16,6 +17,7 @@ public class LittleMaidCompat implements ILittleMaid {
     @Override
     @OnlyIn(Dist.CLIENT)
     public void addMaidTips(MaidTipsOverlay maidTipsOverlay) {
+/*
         ResourceLocation deepLearnerId = ResourceLocation.fromNamespaceAndPath("hostilenetworks", "deep_learner");
         Item deepLearnerItem = BuiltInRegistries.ITEM.get(deepLearnerId);
         if (deepLearnerItem == BuiltInRegistries.ITEM.get(ResourceLocation.withDefaultNamespace("air"))) {
@@ -23,9 +25,10 @@ public class LittleMaidCompat implements ILittleMaid {
             System.out.println("警告：找不到物品 hostilenetworks:deep_learner，请确保 Hostile Neural Networks 模组已安装。");
             return; // 或者添加其他提示
         }
+*/
         maidTipsOverlay.addTips(
                 "将深度学习器放在女仆物品栏",
-                deepLearnerItem
+                Hostile.Items.DEEP_LEARNER.value()
         );
     }
 }

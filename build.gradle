@@ -119,6 +119,8 @@ dependencies {
     implementation 'curse.maven:hostile-neural-networks-552574:6430289-sources-6430290'
 
     implementation 'curse.maven:placebo-283644:6446766'
+
+    implementation 'curse.maven:curios-309927:6529130'
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"

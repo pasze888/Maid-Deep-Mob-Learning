@@ -1,4 +1,5 @@
 package dev.pasze888.maid_deep_mob_learning;
+import dev.pasze888.maid_deep_mob_learning.event.MaidKillHandler;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.common.NeoForge;
 
