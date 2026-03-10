@@ -3,7 +3,10 @@ package dev.pasze888.maid_deep_mob_learning.compat;
 import dev.pasze888.maid_deep_mob_learning.MaidDeepMobLearning;
 import com.github.tartaricacid.touhoulittlemaid.api.ILittleMaid;
 import com.github.tartaricacid.touhoulittlemaid.api.LittleMaidExtension;
+//import com.github.tartaricacid.touhoulittlemaid.api.animation.IMagicCastingAnimationProvider
 import com.github.tartaricacid.touhoulittlemaid.client.overlay.MaidTipsOverlay;
+
+import dev.shadowsoffire.hostilenetworks.Hostile;
 import net.minecraft.world.item.Items;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
@@ -22,15 +25,16 @@ import net.neoforged.api.distmarker.OnlyIn;
 public class LittleMaidCompat implements ILittleMaid {
     // 默认构造函数，女仆模组会在合适的时间调用这个构造函数。可以在这里注册女仆专属的事件
     // Default constructor, the maid mod will call this constructor at the appropriate time. You can register maid-specific events here.
-    public LittleMaidCompat (){
-
-    }
+//    public LittleMaidCompat(){
+//        System.out.println("LittleMaidCompat loaded");
+//    }
     @Override
     @OnlyIn(Dist.CLIENT)
     public void addMaidTips(MaidTipsOverlay overlay) {
+//        var id= BuiltInRegistries.ITEM.get(new ResourceLocation("hostilenetworks","deep_learner"));
         // 前面的是语言文件的 key，后面的是物品
         // The first part is the key in the language file, and the second part is the item
-        overlay.addTips("overlay.maid_deep_mob_learning.deep_learner.tips", Items.APPLE);
+        overlay.addTips("overlay.maid_deep_mob_learning.deep_learner.tips", Hostile.Items.DEEP_LEARNER.value());
     }
 
     }
