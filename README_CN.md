@@ -1,6 +1,5 @@
-# Touhou Little Maid × Hostile Neural Networks 联动模组
-
-让车万女仆能够像玩家一样使用深度学习器，自动积累对应生物的模型进度。
+# 女仆深度学习
+Touhou Little Maid × Hostile Neural Networks 联动模组，让车万女仆能够像玩家一样使用深度学习器，自动积累对应生物的模型进度。
 
 ## 功能简介
 
