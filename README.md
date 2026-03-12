@@ -1,7 +1,3 @@
-好的，已将 **Deep Learning Device** 统一优化翻译为 **Deep Learner**。
-
-以下是更新后的完整英文版本：
-
 # Touhou Little Maid × Hostile Neural Networks Collab Mod
 
 Enables Touhou Little Maid to use the **Deep Learner** just like players, automatically accumulating model progress for corresponding mobs.
