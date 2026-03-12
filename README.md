@@ -1,25 +1,28 @@
+好的，已将 **Deep Learning Device** 统一优化翻译为 **Deep Learner**。
 
-Installation information
-=======
+以下是更新后的完整英文版本：
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+# Touhou Little Maid × Hostile Neural Networks Collab Mod
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+Enables Touhou Little Maid to use the **Deep Learner** just like players, automatically accumulating model progress for corresponding mobs.
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+## Features
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+- **Maid Can Use Deep Learner Too**: Put a **Deep Learner** with a model into the maid's inventory. When the maid kills the corresponding mob, the model progress inside the **Deep Learner** will increase gradually, with the exact same effect as when used by the player.
+- **Seamless Integration**: No complicated operations required—just equip the **Deep Learner** through the maid's inventory interface.
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+## Notes
+
+- The original Hostile Neural Networks already has a mechanic where "pets killing mobs increase progress for **Deep Learners** in the player's inventory". Based on this, this collab mod additionally implements progress accumulation for **Deep Learners** in the maid's inventory. The two mechanics do not interfere with each other and can take effect simultaneously (meaning that when the maid kills a mob, it may increase progress for the same type of **Deep Learner** in the player's inventory as well as progress in the maid's inventory).
+
+## Compatibility
+
+- **Required Dependencies**:
+  - [Touhou Little Maid]
+  - [Hostile Neural Networks]
+- Supported Minecraft Version: 1.21.1 NeoForge
+
+## Credits
+
+- [TouhouLittleMaid](https://github.com/TartaricAcid/TouhouLittleMaid)
+- [Hostile-Neural-Networks](https://github.com/Shadows-of-Fire/Hostile-Neural-Networks)
