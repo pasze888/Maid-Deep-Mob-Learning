@@ -1,5 +1,6 @@
 # Maid Deep Mob Learning
 [简体中文](README_CN.md)
+
 Touhou Little Maid × Hostile Neural Networks Collab Mod.Enables Touhou Little Maid to use the **Deep Learner** just like players, automatically accumulating model progress for corresponding mobs.
 
 ## Features
