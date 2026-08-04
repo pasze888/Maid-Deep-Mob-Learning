@@ -23,7 +23,7 @@ public class MaidKillHandler {
     @SubscribeEvent
     public void kill(LivingDeathEvent event) {
         // 配置检查
-        if (!HostileConfig.killModelUpgrade) return;
+        if (!HostileConfig.actionUpgradesModel) return;
 
         // 击杀者必须是女仆
         if (!(event.getSource().getEntity() instanceof EntityMaid maid)) return;

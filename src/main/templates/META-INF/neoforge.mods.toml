@@ -102,7 +102,7 @@ side = "BOTH"
 [[dependencies.${ mod_id }]]
 modId = "hostilenetworks"
 type = "required"
-versionRange = "[6.2.0,)"
+versionRange = "[6.4.0,)"
 ordering = "AFTER"
 side = "BOTH"
 

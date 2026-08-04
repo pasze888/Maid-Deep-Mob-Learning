@@ -116,9 +116,9 @@ dependencies {
     implementation 'curse.maven:touhou-little-maid-355044:7510722-sources-7510726'
 
     // hostile-neural-networks
-    implementation 'curse.maven:hostile-neural-networks-552574:6430289-sources-6430290'
+    implementation 'curse.maven:hostile-neural-networks-552574:8271317-sources-8271318'
 
-    implementation 'curse.maven:placebo-283644:6446766'
+    implementation 'curse.maven:placebo-283644:6751290'
 
     implementation 'curse.maven:curios-309927:6529130'
     // Example optional mod dependency with JEI
@@ -196,8 +196,7 @@ idea {
 
 allprojects {
     repositories {
-        maven { url 'https://maven.aliyun.com/repository/public/' }
-        mavenLocal()
+        maven { url 'https://maven.aliyun.com/repository/public' }
         mavenCentral()
     }
 }
