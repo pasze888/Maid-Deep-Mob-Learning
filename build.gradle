@@ -158,6 +158,9 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
             mod_version            : mod_version,
     ]
     inputs.properties replaceProperties
+    // 必须显式指定 UTF-8：默认用平台字符集，Windows(GBK) 下会把模板里的中文注释
+    // 写坏成非法 UTF-8 字节，FML 解析 neoforge.mods.toml 失败即报 "is not a valid mod file"
+    filteringCharset = 'UTF-8'
     expand replaceProperties
     from "src/main/templates"
     into "build/generated/sources/modMetadata"
